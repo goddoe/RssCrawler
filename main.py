@@ -13,7 +13,7 @@ def main():
     c                   = collection_name_generator()
 
     # MongoDB에 접속
-    client              = MongoClient("")
+    client              = MongoClient("mongodb://path/to/mongodb:port")
     
     # rssFeederManager에게 MongoClient 객체를 넘겨 접근 할 수있게함
     rssFeederManager	= RssFeedManager(client)
